@@ -1,0 +1,15 @@
+<table class="table">
+        <caption><h3 style="text-align:center">Planned</h3></caption>
+        <thead>
+            <th>#</th>
+            <th>Workout</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+                <tr *ngFor="let workout of plannedWorkoutList; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{workout}}</td>
+                        <td><a href="#" (click)="markCompleted(i)"> Completed</a></td>
+                    </tr> 
+        </tbody>
+    </table>
